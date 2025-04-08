@@ -33,7 +33,7 @@
 
 **How I found it:**
 - The room provides you with the following clue: 
-![Relative](/photos/sakurapwnedletter.png)
+![Alt](./photos/sakurapwnedletter.png)
 - Started on [platform/page]
 - Found username: `@xSakuraGirl1997`
 - Used Sherlock to check across platforms
