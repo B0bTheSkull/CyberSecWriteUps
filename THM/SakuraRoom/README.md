@@ -33,7 +33,7 @@
 
 **How I found it:**
 - The room provides you with the following clue: 
-![Sakura Image First Clue](/photos/sakurapwnedletter.svg)
+![Sakura Image First Clue](photos/sakurapwnedletter.svg)
 - At first glance this doesn't look to bee too helpful, there's some binary going on behind a large **You've Been Pwned!** sign.
 - However, with most image clues I always like to inspect the metadata through the use of exiftool. It yeilded the following:
 ![Exiftool results](/photos/exiftoolresults.png)
