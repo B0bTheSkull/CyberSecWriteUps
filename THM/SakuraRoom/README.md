@@ -6,7 +6,8 @@
 **Category:** OSINT  
 **Difficulty:** Easy  
 **Tags:** OSINT, Social Media, Image Analysis, Google-Fu :wink:
-![SakuraRoom](photos/SakuraRoom.png)
+<p align="left"><img src="photos/SakuraRoom.png" alt="Open"/></p>
+
 ---
 
 ## 1. Approach & Mindset :bulb:
@@ -37,7 +38,7 @@
 
 - At first glance this doesn't look to bee too helpful, there's some binary going on behind a large **You've Been Pwned!** sign.
 - However, with most image clues I always like to inspect the metadata through the use of exiftool. It yeilded the following:
-![Exiftool results](photos/exiftoolresults.png)
+<p align="center"><img src="photos/exiftoolresults.png" alt="exiftool"/></p>
 ---
 
 ### RECONNISANCE
@@ -50,10 +51,12 @@
 **Methods** <br>
 
 - To find the email address of the attacker I decided to do more investigating on their github which yielded their public PGP key:
-![PGPkey](photos/PGPgithub.png)
+<p align="center"><img src="photos/PGPgithub.png" alt="PGP"/></p>
+
 - A PGP key is a pair of cryptographic keys—one public, one private—used to encrypt, decrypt, and digitally sign data, allowing secure communication and identity verification.
 - I decided to base 64 decode the PGP key into ASCII text based on some information I found in regard to PGP keys on reddit. That process yielded the following:
-![PGPkeyBase64](photos/base64decodePGP.png)
+<p align="center"><img src="photos/base64decodePGP.png" alt="Base64shit"/></p>
+
 ---
 - As for finding the name of our attacker I found nothing useful in regards to a name based off of the information from their github.
 - However, we have two usernames linked to our attacker already `sakurasnowangelaiko` and `SakuraSnowAngel83`. Therefore, I decided to employ some google-dorking techniques after other failed tactics.
@@ -79,7 +82,7 @@
 **Methods:**
 - First step taken was trying to find out the cryptowallet of our attacker, I decided to start by exploring one of the several github repos revolving around crypto.
 
-<p align="left"><img src="photos/GitHubCryptos.png" alt = "Cryptos"></p>
+<p align="center"><img src="photos/GitHubCryptos.png" alt = "Cryptos"></p>
 
 - After lots of clicking through repos and looking for anything that could relate to a bitcoin wallet I found a custom writen 'mining script' that the attacker had created.
 <p align="center"><img src="photos/miningscript.png" alt = "miningscript"></p>
@@ -105,13 +108,15 @@
 
 **Methods:**
 - First we start with doing our best to find anything that deals with network and WiFi identifications in relation to our attacker. IP addresses, MAC addresses, possibly any screenshots they've posted that tell us the BSSID (if only that'd be too easy) etc.
-![AP](photos/SakuraAP.png)
-![AP2](photos/SakuraAP2.png)
+<p align="center"><img src="photos/SakuraAP.png" alt="AP"/></p>
+<p align="center"><img src="photos/SakuraAP2.png" alt="AP2"/></p>
+
 > A fun little side note, I hate having to type letters and numbers from images so I wrote a quick little python script that pulls everything from those images above it's here if you wanna use it: [Script](scripts/TextExtract.py)
 - And they posted this on their twitter which literally says 'Wifi and Passwords' in the same sentence. Liquid gold for any ethical hacker or non ethical hacker.
 - My initial thought was this was a large version of a MAC-address because the caption detailed: "Posting this so I don't forget my APs when I get a new phone"
 - Furthermore, they mentioned this in the comments:
-![Darkweb](photos/DarkWeb.png)
+<p align="center"><img src="photos/DarkWeb.png" alt="DeepPaste"/></p>
+
 - After finding this key piece of information I realized this is probably a known MD5 hash that they used to post information into a pastebin DeepPasteV3 is what I found with a similar UI to the screenshots provided.
 - Upon findthing the paste you're given the following information:
 ```
