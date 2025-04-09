@@ -78,7 +78,9 @@
 
 **Methods:**
 - First step taken was trying to find out the cryptowallet of our attacker, I decided to start by exploring one of the several github repos revolving around crypto.
-![GitHubEth](photos/GitHubCryptos.png)
+
+<p align="left"><img src="photos/GitHubCryptos.png" alt = "Cryptos"></p>
+
 - After lots of clicking through repos and looking for anything that could relate to a bitcoin wallet I found a custom writen 'mining script' that the attacker had created.
 ![MiningScript](photos/miningscript.png)
 - Looking through some of the commits on the repo yielded our answer:
