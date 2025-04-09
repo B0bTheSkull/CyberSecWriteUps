@@ -82,14 +82,18 @@
 <p align="left"><img src="photos/GitHubCryptos.png" alt = "Cryptos"></p>
 
 - After lots of clicking through repos and looking for anything that could relate to a bitcoin wallet I found a custom writen 'mining script' that the attacker had created.
-![MiningScript](photos/miningscript.png)
+<p align="center"><img src="photos/miningscript.png" alt = "miningscript"></p>
+
 - Looking through some of the commits on the repo yielded our answer:
-![Wallet](photos/Wallet.png)
+<p align="center"><img src="photos/Wallet.png" alt = "Wallet"></p>
+
 - Decided to google the wallet to figure out some more details on it:
-![Google](photos/EthereumAcct.png)
+<p align="center"><img src="photos/EthereumAcct.png" alt = "EthAcct"></p>
+
 - Going into the Etherscan.io we're greeted with logs on all the transfers of the wallet.
-![Pool](photos/MiningPool.png)
-![Exchange](photos/Tether.png)
+<p align="center"><img src="photos/MiningPool.png" alt = "MiningPool"></p>
+<p align="center"><img src="photos/Tether.png" alt = "Tether"></p>
+
 - Through the use of the logs we're able to answer all the questions.
 ---
 ### TAUNT
