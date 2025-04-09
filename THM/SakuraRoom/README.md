@@ -62,9 +62,11 @@
 - However, we have two usernames linked to our attacker already `sakurasnowangelaiko` and `SakuraSnowAngel83`. Therefore, I decided to employ some google-dorking techniques after other failed tactics.
   > I ran into some issues using the python tool Sherlock which is used to check social media sites for usernames
 - The following results appeared upon googling just the username of the individual:
-![GoogleResults](photos/googlesearch.png)
+<p align="center"><img src="photos/googlesearch.png" alt = "Google"></p>
+
 - After clicking into the @SakuraLoverAiko x account (twitter for real ones) I found a post that provided the answer we were looking for:
-![Realnamepost](photos/tweetofname.png)
+<p align="center"><img src="photos/tweetofname.png" alt = "Name"></p>
+
 ---
 ### UNVEIL
 **Question:** _What cryptocurrency does the attacker own a cryptocurrency wallet for?_
