@@ -33,7 +33,8 @@
 
 **How I found it:**
 - The room provides you with the following clue: 
-![Sakura Image First Clue](photos/sakurapwnedletter.svg)
+<p align="center"><img src="photos/sakurapwnedletter.svg" alt="Map"/></p>
+
 - At first glance this doesn't look to bee too helpful, there's some binary going on behind a large **You've Been Pwned!** sign.
 - However, with most image clues I always like to inspect the metadata through the use of exiftool. It yeilded the following:
 ![Exiftool results](/photos/exiftoolresults.png)
@@ -46,13 +47,14 @@
 **Question 2:** _What is the attacker's full real name?_
 **Answer:**`Aiko Abe`
 
-**Method for Email:**
+**Methods** <br>
+
 - To find the email address of the attacker I decided to do more investigating on their github which yielded their public PGP key:
 ![PGPkey](photos/PGPgithub.png)
 - A PGP key is a pair of cryptographic keys—one public, one private—used to encrypt, decrypt, and digitally sign data, allowing secure communication and identity verification.
 - I decided to base 64 decode the PGP key into ASCII text based on some information I found in regard to PGP keys on reddit. That process yielded the following:
 ![PGPkeyBase64](photos/base64decodePGP.png)
-**Method for Real Name**
+---
 - As for finding the name of our attacker I found nothing useful in regards to a name based off of the information from their github.
 - However, we have two usernames linked to our attacker already `sakurasnowangelaiko` and `SakuraSnowAngel83`. Therefore, I decided to employ some google-dorking techniques after other failed tactics.
   > I ran into some issues using the python tool Sherlock which is used to check social media sites for usernames
